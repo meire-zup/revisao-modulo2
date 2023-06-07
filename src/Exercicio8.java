@@ -24,23 +24,27 @@ public class Exercicio8 {
         do {
             System.out.println("Informe o salário:");
             salario = scanner.nextDouble();
+
             if(salario != -1) {
                 salarios.add(salario);
             }
+
         } while (salario != -1);
 
         System.out.println("Informe o valor de reajuste que será aplicado (em %):");
+
         Double reajuste = scanner.nextDouble();
+
         for (Double sal : salarios) {
             Double salarioReajustado = (1+(reajuste/100)) * sal;
             salariosReajustados.add(salarioReajustado);
         }
+
         System.out.println("************************");
         System.out.println("SALÁRIOS INSERIDOS:");
         System.out.println(salarios);
         System.out.println("SALÁRIOS REAJUSTADOS:");
         System.out.println(salariosReajustados);
         System.out.println("*************************");
-
     }
 }

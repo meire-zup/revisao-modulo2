@@ -12,13 +12,14 @@ public class Exercicio9 {
         int numero = 101;
 
         for (int i = 0; i < numerosInteiros.length; i++) {
+
             numerosInteiros[i] = numero;
             numero++;
         }
 
         for (int i = 0; i < numerosInteiros.length ; i++) {
+
             System.out.println(numerosInteiros[i]);
         }
-
     }
 }

@@ -8,9 +8,11 @@ public class Exercicio6 {
     desses números. Encerre a execução quando um número negativo for digitado.
      */
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
 
         List<Integer> numeros = new ArrayList<>();
+
         Integer numero;
         Integer soma = 0;
 
@@ -22,12 +24,12 @@ public class Exercicio6 {
                 soma += numero;
             }
         } while (numero >= 0);
+
         System.out.println("**************************************");
         System.out.println("Os números positivos inseridos foram:");
         System.out.println(numeros);
         System.out.println("A soma dos números positivos é "+soma);
         System.out.println("**************************************");
-
 
     }
     }

@@ -19,6 +19,7 @@ public class Exercicio5 {
                 numeros.add(numero);
             }
         }
+
         System.out.println("*****************************************************");
         System.out.println("Os números informados que estão entre 0 e 100 são:");
         System.out.println(numeros);

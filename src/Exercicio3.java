@@ -25,8 +25,10 @@ public class Exercicio3 {
         int numeroDeIdentificacao = scanner.nextInt();
 
         List<Double> notas = new ArrayList<>();
+
         double multiplicacaoNotas;
         double somaMultiplicacaoNotas = 0;
+
         for (int i = 0; i < 3 ; i++) {
             System.out.println("Informe o valor da sua nota "+(i + 1)+" :");
             double nota = scanner.nextDouble();
@@ -37,10 +39,13 @@ public class Exercicio3 {
 
         System.out.println("Informe a sua média dos exercícios:");
         Double mediaDosExercicios = scanner.nextDouble();
+
         Double mediaDeAproveitamento = (somaMultiplicacaoNotas + mediaDosExercicios) / 7;
-        System.out.println(mediaDeAproveitamento);
+
         Character conceito;
-        String foiAprovacao = "APROVADO";
+
+        String foiAprovado = "APROVADO";
+
         if(mediaDeAproveitamento >= 9) {
             conceito = 'A';
         } else if (mediaDeAproveitamento < 9 && mediaDeAproveitamento >= 7.5) {
@@ -49,17 +54,19 @@ public class Exercicio3 {
             conceito = 'C';
         } else if (mediaDeAproveitamento < 6 && mediaDeAproveitamento >= 4) {
             conceito = 'D';
-            foiAprovacao = "REPROVADO";
+            foiAprovado = "REPROVADO";
         } else {
             conceito = 'E';
-            foiAprovacao = "REPROVADO";
+            foiAprovado = "REPROVADO";
         }
 
+        System.out.println("*****************************************************");
         System.out.println("NÚMERO DE INDENTIFICAÇÃO: "+numeroDeIdentificacao);
         System.out.println("NOTAS: "+notas);
         System.out.printf("MÉDIA DOS EXERCÍCIOS: %.2f\n", mediaDosExercicios);
         System.out.printf("MÉDIA DO APROVEITAMENTO: %.2f\n", mediaDeAproveitamento);
         System.out.println("CONCEITO: "+conceito);
-        System.out.println("SITUAÇÃO FINAL:"+foiAprovacao);
+        System.out.println("SITUAÇÃO FINAL:"+foiAprovado);
+        System.out.println("*****************************************************");
     }
 }
