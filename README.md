@@ -15,17 +15,13 @@ Ao final de qualquer um dos cálculos deve-se atribuir o resultado para uma vari
 * Exercício 3: Escreva um algoritmo que leia o número de identificação, as 3 notas obtidas por um aluno nas 3 verificações e a 
 média dos exercícios que fazem parte da avaliação, e calcule a média de aproveitamento, usando a fórmula: <p>MA := (nota1 + nota 2 * 2 + nota 3 * 3 + ME)/7</p>
 A atribuição dos conceitos obedece a tabela abaixo. O algoritmo deve escrever o número do aluno, suas notas, a média dos exercícios, a média de aproveitamento, o conceito correspondente e a mensagem 'Aprovado' se o conceito for A, B ou C, e 'Reprovado' se o conceito for D ou E.
-Média de aproveitamento Conceito
-
+Média de aproveitamento Conceito:
   * >= 90 A
   * >= 75 e < 90 B
   * >= 60 e < 75 C
   * >= 40 e < 60 D
   * < 40 E
-
-
 * Exercício 4: Leia a idade de 20 pessoas e exiba a média das idades.
-* 
 * Exercício 5: Faça um algoritmo que leia 20 números e, ao final, escreva quantos estão entre 0 e 100.
 * Exercício 6: Escreva um algoritmo que leia uma sequência de números do usuário e realize a soma desses números. Encerre a execução quando um número negativo for digitado.
 * Exercício 7: Leia o nome um número do usuário um número N e escreva o nome dele na tela N vezes
